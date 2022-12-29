@@ -171,3 +171,16 @@ header.shadow {
     color: var(--main-color);
     font-size: 24px;
 }
+
+.heading {
+    text-align: center;
+}
+
+.heading h2 {
+    font-size: var(--medium-font);
+}
+
+.heading span {
+    font-size: var(--p-font);
+}
+
