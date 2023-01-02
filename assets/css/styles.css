@@ -16,7 +16,7 @@
     --main-color: #6e3562;
     --bg-color: #fff;
     --text-color: #0f0c27;
-    --hover: hsl(290, 100%, 51%);
+    --hover: rgba(181, 69, 206, 0.8);
 
     --big-font: 3.2rem;
     --medium-font: 1.8rem;
@@ -219,3 +219,71 @@ header.shadow {
     font-weight: 400;
     margin-left: 1rem;
 }
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.skills-img img {
+    width: 80%;
+    padding-left: 4rem;
+    object-position: center;
+    border-radius: 1rem;
+}
+
+.bars-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+}
+
+.bars-box h3, 
+span {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.light-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.5rem;
+    background: hsl(313, 35%, 32%, 0.4);
+    border-radius: 0.5rem;
+}
+
+.percent-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0.5rem;
+    background: var(--main-color);
+    border-radius: 0.5rem;
+}
+
+.html-bar {
+    width: 80%;
+}
+
+.css-bar {
+    width: 70%;
+}
+
+.js-bar {
+    width: 40%;
+}
+
+.git-bar {
+    width: 50%;
+}
+
+
+
