@@ -270,20 +270,64 @@ span {
 }
 
 .html-bar {
-    width: 80%;
-}
-
-.css-bar {
     width: 70%;
 }
 
+.css-bar {
+    width: 60%;
+}
+
 .js-bar {
-    width: 40%;
+    width: 30%;
 }
 
 .git-bar {
-    width: 50%;
+    width: 40%;
 }
 
+/* Services */
+
+.services-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.services-box{
+    padding: 20px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 0.5rem;
+    border-bottom: 4px solid var(--main-color);
+    box-shadow: 0 2px 7px rgb(14 55 54 / 15%);
+    transition: transform 0.2s ease-in-out;
+}
+
+.services-box:hover {
+    transform: scale(1.2);
+}
+
+.services-box h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0.7rem 0 0.4rem;
+}
+
+.services-box .bx {
+    padding-top: 2rem;
+    font-size: 24px;
+    color: var(--main-color);
+}
+
+.services-box a {
+    color: var(--main-color);
+    font-size: var(--p-font);
+    font-weight: 500;
+}
 
 
