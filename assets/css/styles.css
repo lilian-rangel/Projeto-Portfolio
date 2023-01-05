@@ -330,4 +330,27 @@ span {
     font-weight: 500;
 }
 
+.portfolio-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.portfolio-img {
+    overflow: hidden;
+    border-radius: 0.5rem;
+}
+
+.portfolio-img img {
+    width: 100%;
+    display: block;
+}
+
+.portfolio-img img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 1s;
+}
+
 
