@@ -355,16 +355,34 @@ span {
     transition: 1s;
 }
 
-#img-text {
+.portfolio-description {
     text-align: center;
     color: var(--main-color);
+    margin-bottom: 2rem;
 }
 
 /* Contato */
 
+.contato-social-media {
+    display: flex;
+    font-size: 36px;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 1rem;
+    color: var(--p-font);
+}
+
+.contato-social-media a{
+    color: var(--p-font);
+    font-size: 36px;
+}
+
+.contato-social-media a:hover {
+    color: var(--hover);
+}
+
 .contato-form {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
     place-items: center;
     margin-top: 2rem;
 }
@@ -413,12 +431,13 @@ form textarea {
     opacity: 1;
 }
 
-.contato-social-media {
-    display: flex;
-    flex-direction: column;
-    font-size: 22px;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 0;
-    gap: 1rem;
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: var(--main-color);
+    color: #fff;
+}
+
+.footer h2{
+    font-size: 1.2rem;
 }
