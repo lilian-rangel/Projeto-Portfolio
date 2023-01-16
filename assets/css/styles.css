@@ -15,7 +15,7 @@
 :root {
     --main-color: #6e3562;
     --bg-color: #fff;
-    --text-color: #0f0c27;
+    --text-color: #181340;
     --hover: rgba(181, 69, 206, 0.8);
 
     --big-font: 3.2rem;
@@ -30,6 +30,11 @@ section {
 body {
     background: var(--bg-color);
     color: var(--text-color);
+}
+
+body.active {
+    --bg-color: #181340;
+    --text-color: #fff;
 }
 
 *::selection{
@@ -340,13 +345,15 @@ span {
 .portfolio-img {
     overflow: hidden;
     border-radius: 0.5rem;
+    margin: 0 auto;
 }
 
 .portfolio-img img {
-    width: 100%;
+    width: 80%;
     display: block;
     padding: 1rem;
     margin: 0 auto;
+    object-fit: contain;
 }
 
 .portfolio-img img:hover {
@@ -440,4 +447,130 @@ form textarea {
 
 .footer h2{
     font-size: 1.2rem;
+}
+
+/* Responsividade*/
+
+@media (max-width: 991px) {
+    header{
+        padding: 18px 4%;
+    }
+    section {
+        padding: 50px 4%;
+    }
+}
+
+@media (max-width: 881px){
+    :root {
+        --big-font: 2.7rem;
+        --medium-font: 1.4rem;
+    }
+}
+
+@media (max-width: 768px){
+    :root {
+        --big-font: 2.4rem;
+        --medium-font: 1.2rem;
+    }
+    header{
+        padding: 11px 4%;
+    }
+    #menu-icon {
+        display: initial;
+        color: var(--text-color);
+    }
+    header .navbar {
+        position: absolute;
+        top: -500px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: var(--bg-color);
+        box-shadow: 0 4px 4px rgb(0 0 0 / 10%);
+        transition: 0.2s ease;
+        text-align: center;
+    }
+    .navbar.active {
+        top: 100%;
+    }
+    .navbar a {
+        padding: 1.5rem;
+        display: block;
+        background: var(--bg-color);
+    }
+    #darkmode {
+        position: absolute;
+        top: 1.4rem;
+        right: 2rem;
+    }
+    .scroll-down{
+        display: none;
+    }
+    .home {
+        grid-template-columns: 0.5fr 3fr;
+    }
+    .home-text {
+        grid-column: 1/3;
+        padding-left: 1.4rem;
+        text-align: center;
+    }
+    .home-img {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        order: initial;
+    }
+    .sobre-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .sobre-img {
+        justify-content: center;
+    }
+    .sobre-text p {
+        text-align: center;
+    }
+    .informacao {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+    .skills-img {
+        display: flex;
+        justify-content: center;
+        padding-top: 2rem;
+    }
+    .skills-img img {
+        padding-left: 0;
+    }
+    .portfolio-content {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 375px){
+    :root {
+        --big-font: 1.7rem;
+        --medium-font: 1.1rem;
+    }
+    .home-text span {
+        font-size: 1rem;
+    }
+    .home-text h2 {
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+    .informacao .info-box span{
+        font-size: 1rem;
+    }
+    .contato-form form{
+        width: auto;
+    }
 }
