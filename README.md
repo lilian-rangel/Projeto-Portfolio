@@ -13,7 +13,7 @@ Criar um site de portfólio e com isso demonstrar minhas habilidades, competênc
 
 <hr>
 <h2 align="center">Deploy 👨🏽‍💻</h2>
-<a href="https://lilian-rangel-portfolio.netlify.app/" target="_blank">Confirna no link meu portfolio</a>
+<a href="https://lilian-rangel-portfolio.netlify.app/" target="_blank">Confira no link meu portfolio</a>
 
 <hr>
 <h2 align="center"> Demo do projeto versão Desktop</h2>
